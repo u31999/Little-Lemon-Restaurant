@@ -11,43 +11,6 @@ h2 {
   color: black;
 }
 
-@-webkit-keyframes .changeScale {
-  from {
-    scale: 0;
-  }
-  to {
-    scale: 1;
-  }
-}
-
-@keyframes .changeScale {
-  from {
-    scale: 0;
-  }
-  to {
-    scale: 1;
-  }
-}
-@-webkit-keyframes .moveIn {
-  from {
-    transform: translateX(-300%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-@keyframes .moveIn {
-  from {
-    transform: translateX(-300%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 div.homepage-menu {
   display: flex;
   flex-direction: column;
