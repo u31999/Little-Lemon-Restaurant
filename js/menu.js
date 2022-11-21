@@ -5,6 +5,7 @@ import {allMenu} from "./data";
     parent: The parent of the element
     Return: node
       */
+     console.log('Iam running')
 const makeEl = (type, c, txt, parent) => {
     const el = document.createElement(`${type}`)
     if(c) el.className = `${c}`
