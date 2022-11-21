@@ -1,0 +1,243 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+div.menu-cards.add-animation div.card {
+  -webkit-animation: moveIn 350ms linear forwards;
+          animation: moveIn 350ms linear forwards;
+}
+
+div.menu-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  flex-wrap: wrap;
+}
+div.menu-cards div.card {
+  border-radius: 50px;
+  border: none;
+  transition: all 350ms ease-in;
+  transform: translateX(300%);
+  opacity: 0;
+}
+div.menu-cards div.card img.card-img-top {
+  background-color: #f93822;
+  border-radius: 50px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+}
+div.menu-cards div.card div.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+div.menu-cards div.card div.card-body p {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: cursive;
+  font-size: 18px;
+  color: #fdd20e;
+  text-shadow: black 1px 1px 1px;
+}
+div.menu-cards div.card div.card-body button {
+  visibility: none;
+}
+div.menu-cards div.card:hover {
+  cursor: pointer;
+  background-color: #fdd20e;
+}
+div.menu-cards div.card:hover button {
+  visibility: visible;
+}
+div.menu-cards div.card:hover button:hover {
+  background-color: whitesmoke;
+}
+div.menu-cards div.card:hover div.card-body p {
+  color: #f93822;
+}
+
+/*The bottom menu*/
+div.menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+div.menu-content div.menu-card {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  scale: 0;
+  -webkit-animation: changeScale 450ms ease forwards;
+          animation: changeScale 450ms ease forwards;
+}
+div.menu-content div.menu-card div.menu-img-container {
+  flex: 1.5 !important;
+  position: relative;
+  height: 50%;
+}
+div.menu-content div.menu-card div.menu-img-container p.card-text {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #f93822;
+  background-color: #fdd20e;
+  text-shadow: black 1px 1px 1px;
+  border-radius: 20px;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-transform: capitalize !important;
+}
+div.menu-content div.menu-card div.menu-img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  flex: 1;
+  height: 85%;
+}
+div.menu-content div.menu-card div.menu-img-container div.btn-menu-container {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+div.menu-content div.menu-card div.menu-img-container div.btn-menu-container button {
+  font-weight: 900;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+div.menu-content div.menu-card div.card-body {
+  flex: 0.5 !important;
+  display: flex;
+  flex-direction: column;
+}
+div.menu-content div.menu-card div.card-body p.prise {
+  border: 0.5px gray solid;
+  border-radius: 10px;
+  color: gray;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+div.menu-content div.menu-card div.card-body p.prise span.prev-prise {
+  -webkit-text-decoration: line-through red 2px;
+          text-decoration: line-through red 2px;
+}
+div.menu-content div.menu-card div.card-body div.item-description {
+  display: block;
+  flex: 1;
+  margin-bottom: 0px !important;
+}
+
+div.menu-card:hover {
+  cursor: pointer;
+  box-shadow: black 1px 2px 4px;
+}
+div.menu-card:hover div.menu-img-container div.btn-menu-container {
+  display: flex !important;
+}
+div.menu-card:hover div.menu-img-container img {
+  opacity: 0.6;
+}
+
+/* Animation */
+@-webkit-keyframes changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes moveIn {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=menu-cards.css.map */

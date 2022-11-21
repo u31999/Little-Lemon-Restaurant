@@ -1,0 +1,89 @@
+@import 'root';
+
+div.outer-container {
+    background-image: url('../res/pizz-background.webp');
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+div.promo-promotion {
+    
+    height:  450px;
+    display: flex;
+   flex-direction: row-reverse;
+  
+    div.promo-img {
+        background-image: url('../res/transparent-burger.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100%;
+        background-size: contain;
+        flex: 1;
+        scale: 0;
+        animation: changeScale 300ms linear forwards;
+        div.promo-text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0;
+            transform: translateX(-300%);
+            animation: moveIn 450ms ease 200ms forwards;
+           h3 {
+                color: $bright-red !important;
+                text-shadow: black 1px 1px 1px;
+                font-weight: 900;
+                letter-spacing: 1.5px;
+                font-size: 30px;
+            }
+            div h2 {
+                font-weight: 900;
+                letter-spacing: 2.5;
+                font-size: 45px;
+            }
+            div p {
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                color: gray;
+            }
+        }
+    }   
+}
+
+button.btn-book {
+    padding: .5rem 1.5rem;
+    color: whitesmoke;
+    background-color: $bright-red;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    font-size: 22px;
+    text-shadow: black .5px .5px .5px;
+    border-radius: 50px;
+    border: none;
+    transition: all 240ms ease-in-ou;
+}
+
+button.btn-book:hover {
+    background-color: $cyber-yellow;
+    color: $bright-red;
+}
+
+/* Animation */
+@keyframes changeScale {
+    from {
+      scale: 0;
+    }
+    to {
+      scale: 1;
+    }
+  }
+  @keyframes moveIn {
+    from {
+        transform: translateX(-300%);
+        opacity: 0
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}

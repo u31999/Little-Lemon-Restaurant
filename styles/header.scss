@@ -1,0 +1,96 @@
+@import 'root';
+header {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 !important;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+     nav {
+        background-color: $bright-red !important;
+        flex: 1;
+        height: 100%;
+        div.container-fluid {
+            height: 100% !important;
+            a.navbar-brand {
+                width: 220px;
+                height: 100%;
+                div.logo {
+                    background-image: url('../res/logo/16@4x.png');
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    
+                }
+            }
+            ul {
+                background-color: $bright-red;
+            }
+            div#navbarNav > ul li a.nav-link {
+                font-weight: 900;
+                letter-spacing: .1rem;
+                color: whitesmoke;
+                text-shadow: $black-green 1px 1px 1px;
+                font-size: 18px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                transition: all 100ms ease-in-out;
+            }
+
+            div.basket-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.3rem;
+                flex-direction: row-reverse;
+            }
+            a.btn-order {
+                background-color: whitesmoke;
+                color: $bright-red !important;
+                border-radius: 50px;
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 100ms ease-in-out;
+        
+            }
+            a.hot-line span:first-child {
+                color: $cyber-yellow;
+            }
+            a.hot-line span:last-child {
+                color: whitesmoke;
+            }
+            a.btn-order:hover {
+                color: $cyber-yellow !important;
+                background-color: $bright-red;
+            }
+            div#navbarNav > ul li a.nav-link:hover {
+                color: $cyber-yellow;
+            }
+            
+        }
+       
+    }
+   
+}
+
+/*Mobile menu*/
+div.navbar-collapse.show {
+
+    ul {
+        z-index: 1000;
+        height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        padding: 1.5rem;
+        transition: all 10ms ease !important;
+
+        a.hot-line {
+            text-align: center;
+        }
+    }
+}

@@ -1,3 +1,5 @@
 # A home page for a restaurant.
 
-# This project is a part of the Meta Front-End Developer Professional Certificate (HTML and CSS in depth Course)
+# Build with HTML5, CSS3, Vanilla js
+
+# Used in bootstrap framework, and SCSS preprocessor

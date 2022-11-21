@@ -1,0 +1,135 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+header {
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0 !important;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  background-color: #f93822 !important;
+  flex: 1;
+  height: 100%;
+}
+header nav div.container-fluid {
+  height: 100% !important;
+}
+header nav div.container-fluid a.navbar-brand {
+  width: 220px;
+  height: 100%;
+}
+header nav div.container-fluid a.navbar-brand div.logo {
+  background-image: url("../res/logo/16@4x.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+header nav div.container-fluid ul {
+  background-color: #f93822;
+}
+header nav div.container-fluid div#navbarNav > ul li a.nav-link {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  text-shadow: #495e57 1px 1px 1px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: all 100ms ease-in-out;
+}
+header nav div.container-fluid div.basket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-direction: row-reverse;
+}
+header nav div.container-fluid a.btn-order {
+  background-color: whitesmoke;
+  color: #f93822 !important;
+  border-radius: 50px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease-in-out;
+}
+header nav div.container-fluid a.hot-line span:first-child {
+  color: #fdd20e;
+}
+header nav div.container-fluid a.hot-line span:last-child {
+  color: whitesmoke;
+}
+header nav div.container-fluid a.btn-order:hover {
+  color: #fdd20e !important;
+  background-color: #f93822;
+}
+header nav div.container-fluid div#navbarNav > ul li a.nav-link:hover {
+  color: #fdd20e;
+}
+
+/*Mobile menu*/
+div.navbar-collapse.show ul {
+  z-index: 1000;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  padding: 1.5rem;
+  transition: all 10ms ease !important;
+}
+div.navbar-collapse.show ul a.hot-line {
+  text-align: center;
+}/*# sourceMappingURL=header.css.map */

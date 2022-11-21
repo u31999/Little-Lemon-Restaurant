@@ -1,0 +1,20 @@
+$limen_yellow: #D6ED17FF;
+$gray: #606060FF;
+$cyber-yellow: #FDD20EFF;
+$bright-red: #F93822FF;
+$disky-citron: #E3CD81FF;
+$black-green: #495e57;
+$transparent-yellow: #fdd21126;
+
+/* The root styles of text*/
+p.upper-p {
+    color: $bright-red;
+    text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: 2.5;
+    font-size: 45px;
+    color: black;
+}

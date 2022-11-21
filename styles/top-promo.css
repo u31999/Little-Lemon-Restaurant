@@ -1,0 +1,155 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+div.outer-container {
+  background-image: url("../res/pizz-background.webp");
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+div.promo-promotion {
+  height: 450px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+div.promo-promotion div.promo-img {
+  background-image: url("../res/transparent-burger.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  background-size: contain;
+  flex: 1;
+  scale: 0;
+  -webkit-animation: changeScale 300ms linear forwards;
+          animation: changeScale 300ms linear forwards;
+}
+div.promo-promotion div.promo-img div.promo-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 0;
+  transform: translateX(-300%);
+  -webkit-animation: moveIn 450ms ease 200ms forwards;
+          animation: moveIn 450ms ease 200ms forwards;
+}
+div.promo-promotion div.promo-img div.promo-text h3 {
+  color: #f93822 !important;
+  text-shadow: black 1px 1px 1px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+}
+div.promo-promotion div.promo-img div.promo-text div h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+}
+div.promo-promotion div.promo-img div.promo-text div p {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: gray;
+}
+
+button.btn-book {
+  padding: 0.5rem 1.5rem;
+  color: whitesmoke;
+  background-color: #f93822;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  font-size: 22px;
+  text-shadow: black 0.5px 0.5px 0.5px;
+  border-radius: 50px;
+  border: none;
+  transition: all 240ms ease-in-ou;
+}
+
+button.btn-book:hover {
+  background-color: #fdd20e;
+  color: #f93822;
+}
+
+/* Animation */
+@-webkit-keyframes changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=top-promo.css.map */

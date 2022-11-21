@@ -1,0 +1,73 @@
+@import 'root';
+
+div.who-we-are {
+    display: flex;
+    padding-bottom: 5rem;
+    flex-wrap: wrap !important;
+    div.text-who-we-are-container {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+        margin: auto;
+        gap: 10px;
+        padding-right: 6rem;
+        flex-wrap: wrap;
+        color: gray;
+        
+        
+    }
+    div.img-who-we {
+        flex: 1;
+        flex-wrap: wrap;
+        position: relative;
+        height: 90%;
+        margin: auto;
+        div.overlay {
+            transition: all 300ms ease-in-out;
+            z-index: 100;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+           background-color: transparent;
+            border-radius: 100px;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            border: 2px solid $bright-red;
+            outline: 1px solid $cyber-yellow;
+        }
+        
+    }
+    div.img-who-we:hover {
+        cursor: pointer;
+        div.overlay {
+            display: flex;
+            background-color: transparent;
+        }
+        div.overlay:hover {
+            background-color: $transparent-yellow;
+        }
+
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    div.who-we-are {
+        flex-direction: column;
+        gap: 2rem;
+        div.text-who-we-are-container {
+            align-items: center;
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+}
+

@@ -1,0 +1,175 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+footer {
+  background-image: url("/res/footer-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  padding-bottom: 0px;
+}
+footer div.container div.row:first-child {
+  gap: 1rem !important;
+}
+footer div.col, footer div.container {
+  padding: 0px;
+}
+footer div.footer-head-text {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: cursive;
+  color: #495e57;
+}
+footer div.footer-logo {
+  background-image: url("/res/logo/16@4x.png");
+  background-position: center;
+  width: 80%;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer div.container {
+  min-width: 100%;
+}
+footer p.footer-text {
+  letter-spacing: 1px;
+}
+footer p.footer-text a {
+  text-decoration: none;
+  color: #495e57;
+}
+footer p.footer-text a i.fa-angles-right {
+  display: none;
+}
+footer p.footer-text a:hover {
+  color: #f93822;
+}
+
+p.quick-link-text:hover a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  transition: all 100ms ease-in-out;
+  color: #f93822 !important;
+}
+p.quick-link-text:hover a i.fa-angles-right {
+  display: block;
+}
+
+form.form {
+  background-color: rgba(255, 192, 203, 0.431372549);
+  border: rgba(245, 245, 245, 0.3294117647) 0.1px solid;
+  border-radius: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 75%;
+  display: flex;
+}
+form.form input, form.form input:active, form.form input:focus {
+  outline: none;
+  border: none;
+  background-color: transparent !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+form.form button {
+  width: 100%;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  background-color: #f93822;
+  border-color: #fdd20e;
+  transition: all 100ms ease-in;
+}
+form.form button i {
+  font-size: 20px;
+  color: whitesmoke;
+}
+form.form button:hover {
+  border: #fdd20e 0.5px solid;
+}
+form.form button:hover i {
+  color: #fdd20e;
+}
+
+div.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: rgba(245, 245, 245, 0.3294117647) 0.1px solid;
+  gap: 10px;
+  background-color: rgba(255, 192, 203, 0.1);
+}
+div.copyright div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #495e57;
+}
+div.copyright div.icons a i {
+  font-size: 25px;
+  color: #f93822;
+}
+div.copyright div.icons a:hover i {
+  color: #fdd20e;
+}/*# sourceMappingURL=footer.css.map */

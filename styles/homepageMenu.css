@@ -1,0 +1,92 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+div.homepage-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+div.homepage-menu div.top-menu-txt {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  gap: 1rem;
+}
+div.homepage-menu div.top-menu-txt p {
+  font-size: 24px;
+}
+div.homepage-menu div.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+div.homepage-menu div.menu-buttons button {
+  border: 0.1px gray solid;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 25px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: cursive;
+}
+div.homepage-menu div.menu-buttons button.active, div.homepage-menu div.menu-buttons button:hover {
+  background-color: #fdd20e;
+  color: whitesmoke;
+  box-shadow: black 4px 2px 6px;
+  border: none;
+}/*# sourceMappingURL=homepageMenu.css.map */

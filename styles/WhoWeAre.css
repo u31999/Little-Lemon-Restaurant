@@ -1,0 +1,116 @@
+/* The root styles of text*/
+p.upper-p {
+  color: #f93822;
+  text-shadow: black 1px 1px 1px;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 2.5;
+  font-size: 45px;
+  color: black;
+}
+
+@-webkit-keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes .changeScale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@-webkit-keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes .moveIn {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+div.who-we-are {
+  display: flex;
+  padding-bottom: 5rem;
+  flex-wrap: wrap !important;
+}
+div.who-we-are div.text-who-we-are-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  margin: auto;
+  gap: 10px;
+  padding-right: 6rem;
+  flex-wrap: wrap;
+  color: gray;
+}
+div.who-we-are div.img-who-we {
+  flex: 1;
+  flex-wrap: wrap;
+  position: relative;
+  height: 90%;
+  margin: auto;
+}
+div.who-we-are div.img-who-we div.overlay {
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+div.who-we-are div.img-who-we img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  border: 2px solid #f93822;
+  outline: 1px solid #fdd20e;
+}
+div.who-we-are div.img-who-we:hover {
+  cursor: pointer;
+}
+div.who-we-are div.img-who-we:hover div.overlay {
+  display: flex;
+  background-color: transparent;
+}
+div.who-we-are div.img-who-we:hover div.overlay:hover {
+  background-color: rgba(253, 210, 17, 0.1490196078);
+}
+
+@media only screen and (max-width: 768px) {
+  div.who-we-are {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  div.who-we-are div.text-who-we-are-container {
+    align-items: center;
+    padding-right: 0;
+    text-align: center;
+  }
+}/*# sourceMappingURL=WhoWeAre.css.map */
