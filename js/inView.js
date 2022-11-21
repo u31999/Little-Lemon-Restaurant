@@ -1,7 +1,6 @@
 const menuCardTriggerAnimation = () => {
     let menuCards = document.querySelector('div.menu-cards');
     window.addEventListener('scroll', () => {
-        if(!menuCards) return
         console.log(isElementInViewPort(menuCards))
         if(isElementInViewPort(menuCards)) {
            if(!menuCards.className.includes('add-animation')) menuCards.className += ' add-animation'
