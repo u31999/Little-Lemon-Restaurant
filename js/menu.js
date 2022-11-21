@@ -1,4 +1,4 @@
-import {allMenu} from "../js/data";
+import {allMenu} from "./data"
 /*makeEl: create element
     type: The type of element
     c: className
