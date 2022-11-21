@@ -12,7 +12,7 @@ h2 {
 }
 
 footer {
-  background-image: url("/res/footer-4.jpg");
+  background-image: url("./res/footer-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem;
