@@ -1,7 +1,7 @@
 const menuCardTriggerAnimation = () => {
     let menuCards = document.querySelector('div.menu-cards');
-    window.addEventListener('scroll', () => {
-        console.log(isElementInViewPort(menuCards))
+    
+    document.body.addEventListener('scroll', () => {
         if(isElementInViewPort(menuCards)) {
            if(!menuCards.className.includes('add-animation')) menuCards.className += ' add-animation'
         }
@@ -17,7 +17,6 @@ const menuCardTriggerAnimation = () => {
 
 function isElementInViewPort(element){
      let rect = element.getBoundingClientRect();    
-
      let isTopInViewPort = rect.top >= 0
          
 
