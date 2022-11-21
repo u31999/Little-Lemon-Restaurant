@@ -3,4 +3,9 @@ body, html {
   padding: 0%;
   height: 100%;
   overflow-x: hidden !important;
+  overflow-y: auto;
+}
+
+* {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
